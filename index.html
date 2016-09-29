@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Service in Angular</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+	<script src='customService.js'></script>
+	<link rel="stylesheet" type="text/css" href="service.css">
+</head>
+<body ng-app='customServiceApp'>
+
+    <div ng-controller='ctrl1'>
+        Controller 1: 
+        <br />article 1: {{articles1[0].title}};
+    </div>
+    <hr >
+
+    <div ng-controller='ctrl2'>
+        Controller 2: 
+        <br />article 1: {{articles2[0].title}};
+        <br />article 2: {{articles2[1].title}} {{articles2[1].content}};
+    </div>
+   
+
+
+</body>
+</html>
