@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="service.css">
 </head>
 <body ng-app='customServiceApp'>
-
+    <h3>Sharing data between controllers by module.factory:</h3>
     <div ng-controller='ctrl1'>
         Controller 1: 
         <br />article 1: {{articles1[0].title}};
@@ -19,6 +19,13 @@
         <br />article 1: {{articles2[0].title}};
         <br />article 2: {{articles2[1].title}} {{articles2[1].content}};
     </div>
+    
+    <h3>Sharing data between controllers by module.service:</h3>
+    <div ng-controller='ctrl3'>
+        Controller 1: 
+        <br />article 1: {{articles3[0].title}};
+    </div>
+    <hr >
    
 
 
